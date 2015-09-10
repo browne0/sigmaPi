@@ -1,0 +1,98 @@
+@import 'variables';
+@import 'lib/elements';
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header-wrapper {
+    height: 100vh;
+    background-position: 70% 100%;
+    position: relative;
+    transition: height 0.8s;
+    text-shadow: 0.1em 0.1em grey;
+    .ui.main.header {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 3em;
+        font-family: "Graduate", serif;
+        font-weight: 1000;
+        color: rgba(255, 255, 255, .9);
+        margin: 0px !important;
+        .subheader {
+            
+        }
+        .headscrim {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 0px;
+            -webkit-filter: blur(20px);
+            filter: blur(20px);
+            min-height: 15%;
+            min-width: 40%;
+            max-width: 50%;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        .scrimtext {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .subheader {
+            position: relative;
+            top: 45%;
+            height: p.height;
+            padding: 2%;
+            background-color: rgba(0, 0, 0, .7);
+            position: absolute;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            font-size: 20px;
+            width: 80%;
+            p {
+                text-shadow: none;
+                text-align: justify;
+                position: relative;
+                line-height: 1.5;
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-weight: 300;
+            }
+        }
+    }
+    #PurdueLogo {
+        position: absolute;
+        float: right;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+.backgroundImage {
+    z-index: -1;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    .bgGrad {
+        background: #CCC;
+        background: linear-gradient(to top, rgba(0, 0, 0, .35) 0%, rgba(255, 255, 255, 0) 80%);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        padding: 0;
+    }
+}

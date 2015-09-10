@@ -1,0 +1,1 @@
+Readme will be made eventually.  Please create pull-requests for committing to master, work in a working branch and commit to working branches until then. let me know if you need help figuring out git. 
